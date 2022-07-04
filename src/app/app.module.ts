@@ -5,15 +5,17 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { LoginComponent } from './login/login.component';
 import { SearchProfileComponent } from './search-profile/search-profile.component';
 import { ProfileDetailComponent } from './profile-detail/profile-detail.component'
 import { SearchService } from './services/search.service';
 import { environment } from 'src/environments/environment';
-import { MockSearchService } from './services/mock-search.service';
+
 
 @NgModule({
   declarations: [
     AppComponent,
+    LoginComponent,
     SearchProfileComponent,
     ProfileDetailComponent
   ],
@@ -26,7 +28,7 @@ import { MockSearchService } from './services/mock-search.service';
   ],
   providers: [{
     //startegy pattern - Deciding service depends on environment at runtime.
-    provide: SearchService, useClass: environment.production == false ? MockSearchService : SearchService
+    provide: SearchService, useClass: SearchService
   }],
   bootstrap: [AppComponent]
 })

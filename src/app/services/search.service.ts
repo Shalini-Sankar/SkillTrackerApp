@@ -4,6 +4,7 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { BaseService } from './base.service';
+import { skills } from '../Mock-Data/Skills';
 
 @Injectable()
 export class SearchService extends BaseService {
@@ -20,7 +21,7 @@ export class SearchService extends BaseService {
   }
 
   getSkills(){
-    return [];
+    return skills;
   }
 
 }

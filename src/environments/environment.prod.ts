@@ -1,4 +1,4 @@
 export const environment = {
   production: true,  
-  searchUrl: 'http://localhost:14082/api/Admin/search'
+  searchUrl: 'http://localhost:9000/admin/search'
 };
