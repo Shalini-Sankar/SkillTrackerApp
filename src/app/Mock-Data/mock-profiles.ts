@@ -2,7 +2,7 @@ import { Profile } from "./../models/profile";
 
 export const mockprofiles: Profile[] = [
   {
-    email: 'maitri@gmail.com', name: 'Maitri', empId: '123456', mobile: '9867986712',
+    email: 'rithi@gmail.com', name: 'Rithi', empId: '123456', mobile: '9867986712',
     skills: [
       { skillId: 1, name: 'HTML-CSS-JAVASCRIPT', isTechnical: true, proficiency: 14 },
       { skillId: 3, name: 'REACT', isTechnical: true, proficiency: 16 },

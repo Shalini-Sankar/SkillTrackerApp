@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  searchUrl: 'http://localhost:9000/admin/search'
+  searchUrl: 'http://localhost:8000/admin/search'
 };
 
 /*
